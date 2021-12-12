@@ -120,7 +120,7 @@ const FileListing: FunctionComponent<{ query?: ParsedUrlQuery }> = ({ query }) =
   if (!data) {
     return (
       <div className="dark:bg-gray-900 p-3 bg-white rounded shadow">
-        <Loading loadingText="Loading ..." />
+        <Loading loadingText="加载中 ..." />
       </div>
     )
   }
@@ -176,10 +176,10 @@ const FileListing: FunctionComponent<{ query?: ParsedUrlQuery }> = ({ query }) =
     return (
       <div className="dark:bg-gray-900 dark:text-gray-100 bg-white rounded shadow">
         <div className="dark:border-gray-700 grid items-center grid-cols-12 p-3 space-x-2 border-b border-gray-200">
-          <div className="md:col-span-7 col-span-12 font-bold">Name</div>
-          <div className="md:block hidden col-span-3 font-bold">Last Modified</div>
-          <div className="md:block hidden font-bold">Size</div>
-          <div className="md:block hidden font-bold">Actions</div>
+          <div className="md:col-span-7 col-span-12 font-bold">文件</div>
+          <div className="md:block hidden col-span-3 font-bold">修改日期</div>
+          <div className="md:block hidden font-bold">大小</div>
+          <div className="md:block hidden font-bold">操作</div>
         </div>
 
         <Toaster
